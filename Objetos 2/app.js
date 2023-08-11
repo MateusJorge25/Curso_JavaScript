@@ -1,15 +1,24 @@
-let pessoa = {
+let Mateus = {
       primerioNome: 'Mateus', 
       segundoNome: 'Jorge',           // criação de um objeto: coleção de pares de nomes e valores
     address: {
-      street: '111 Rua Brendolan',
+      street: '111 Rua J',
       city: 'Jaboticabal',
       estado: 'SP'
     }
 };
 
+function saudacao (pessoa) {
+  console.log ('ola'+ pessoa.primerioNome);
 
-console.log (pessoa);
+}
+
+saudacao(Mateus);
+
+saudacao ({
+  primeiroNome: 'Natalia',
+  segundoNome: 'Esteves'
+});
 
 
 
